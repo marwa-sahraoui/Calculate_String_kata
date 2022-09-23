@@ -22,5 +22,12 @@ public class CalculateStringTest {
        assertThat(CalculateString.add(actualNumber)).isEqualTo(expectedNumber);
 
    }
-  
+    @Test
+    public void given_String_number_Separated_with_comma_Return_sum_of_number(){
+
+        assertThat(CalculateString.add("1,2")).isEqualTo(3);
+        assertThat(CalculateString.add("1,3")).isEqualTo(4);
+        assertThat(CalculateString.add("1,3,2")).isEqualTo(6);
+    }
+
 }
